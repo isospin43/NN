@@ -7,7 +7,7 @@ resource "aws_instance" "web" {
   ami = ""
   subnet_id = ""
   instance_type = "t3.micro"
-  tags {
+  tags = {
     name="sv-test"
   }
 }
